@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let student=[
+            {
+                id:101,
+                Name:"Mahram ali",
+                gpa:3.45
+            },
+            {
+                id:102,
+                Name:"Shamim Ahmed",
+                gpa:4.50
+            },
+            {
+                id:103,
+                Name:"Nishad mia",
+                gpa:3.75
+            },
+            {
+                id:104,
+                Name:"Sharmin Akther",
+                gpa:3.25
+            }
+        ]
+
+        let studentName=()=> student.filter((x)=> x.gpa>3.5).map((y)=>y.Name); 
+
+        document.write(studentName());
+    </script>
+</body>
+</html>
