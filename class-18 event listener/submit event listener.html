@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="name">Enter Name : <input type="text" id="name" name="name" required autofocus></label><br><br>
+        <label for="name">Enter Email : <input type="email" id="email" name="email" required></label><br><br>
+        <label for="name">Enter Password : <input type="password" id="password" name="password" minlength="5"
+                maxlength="10" required></label><br> <br>
+        <input type="submit" id="btn" value="Signup">
+
+
+    </form>
+    <br>
+    <textarea id="tarea" cols="30" rows="10"></textarea>
+
+    <script>
+        // find all elements
+        const form = document.querySelector("form");
+        const name = form.querySelector("#name");
+        const email = form.querySelector("#email");
+        const password = form.querySelector("#password");
+        const tarea = document.querySelector("#tarea");
+
+        form.addEventListener("submit", formHandler);
+        function formHandler(e) {
+            e.preventDefault();
+
+            var userInfo = {
+                name: name.value,
+                email: email.value,
+                password: password.value
+            }
+
+            tarea.append("Name : " + userInfo.name + "\n")
+            tarea.append("Email : "+ userInfo.email + "\n")
+            tarea.append("password : "+ userInfo.password)
+
+        }
+
+    </script>
+</body>
+
+</html>

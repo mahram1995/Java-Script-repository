@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function findMax(scors){
+            var max=scors[0];
+            for (let i = 1; i < scors.length; i++) {
+                if(max<scors[i]){
+                    max=scors[i];
+                } 
+            }
+            return max;
+        }
+        var scors=[20,30,25,41,80,15,62];
+        document.write(findMax(scors));
+    </script>
+</body>
+</html>

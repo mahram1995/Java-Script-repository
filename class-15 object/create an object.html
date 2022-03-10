@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // declearing object
+        var students={
+            name:"mahram ali",
+            age:27,
+            cgpa:3.27
+        }
+
+        // print objecet value
+        document.write(students.name);
+
+      //  declaring constructor
+      function student(name,age,cgpa){
+          this.name=name;
+          this.age=age;
+          this.cgpa=cgpa
+      }
+    // creating student object;
+      var s1= new student("Tamim",20,4.45);
+      var s2= new student("Shamim",25,2.45);
+      var s3= new student("Romjan",29,3.45);
+      var s4= new student("Topu",25,4.45);
+      //print 
+      document.write(s2.name)
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="heading1">Mahram ali</h2>
+    <p id="para">I am paragrap</p>
+    <h3>Hello</h3>
+    <p class="class2">Hello Dhaka</p>
+
+    <p id="id">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, nihil.</p>
+    <p class="class6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, nihil.</p>
+    <h5>Hello Bangladesh</h5>
+
+    <script>
+        // getElementById()
+        document.getElementById("heading1").innerHTML="Razib";
+        document.getElementById("para").innerHTML="hello md mahram";
+
+        // getElementByTagName() it's return a  group of tag
+
+        document.getElementsByTagName("h3")[0].innerHTML="Dhaka is the capital of bangladesh"
+
+        // getElementByClassName() it's return a group of class
+        document.getElementsByClassName("class2")[0].innerHTML="I love my country"
+
+        // querySelector()
+        document.querySelector("#id").innerHTML="Dhaka is the capital of bangladesh"
+        document.querySelector(".class6").innerHTML="Brhamanbaria is the capital of bangladesh"
+        document.querySelector("h5").innerHTML="Chittagong is the capital of bangladesh"
+ 
+    </script>
+</body>
+</html>

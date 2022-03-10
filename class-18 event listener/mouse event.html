@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div" style="height: 200px; width: 200px; background-color: cadetblue;">
+
+    </div>
+    <script>
+        var div=document.querySelector("#div");
+
+        div.addEventListener("dblclick", function(){
+            console.log("oncdblClick")
+        })
+
+        div.addEventListener("mousedown", function(){
+            console.log("mousedown")
+        })
+        div.addEventListener("mouseenter", function(){
+            console.log("mouseenter")
+        })
+        div.addEventListener("mouseup", function(){
+            console.log("mouseup")
+        })
+        div.addEventListener("mouseleave", function(){
+            console.log("mouseleave")
+        })
+        div.addEventListener("mousemove", function(){
+            console.log("mousemove")
+        })
+        div.addEventListener("mouseout", function(){
+            console.log("mouseout")
+        })
+        div.addEventListener("mouseover", function(){
+            console.log("mouseover")
+        })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- add change listener wiht input tage-->
+    <label for="email"> Enter Email :</label>
+    <input id="input" type="text">
+
+    <!-- add change listener wiht select tage-->
+    <Label>Select Language :</Label>
+    <select name="name" id="language">
+        <option value="JAVA">JAVA</option>
+        <option value="CSS">CSS</option>
+        <option value="C++">C++</option>
+    </select>
+    <br><br>
+     <!-- add change listener wiht textarea tage-->
+     <label for="">Write about your self</label>
+        <textarea name="name" id="tarea" cols="30" rows="10"></textarea>
+
+
+    <p>Out put:</p>
+    <p class="para"></p>
+    <script>
+        //add change listener wiht input tage
+        var input = document.querySelector("#input");
+        input.addEventListener("change", function (e) {
+            document.querySelector(".para").innerHTML = e.target.value
+        })
+
+        //add change listener wiht select tage
+        var input = document.querySelector("#language");
+        input.addEventListener("change", function (e) {
+            document.querySelector(".para").innerHTML = e.target.value
+        })
+
+         //add change listener wiht textarea tage
+        
+         var input = document.querySelector("#tarea");
+        input.addEventListener("change", function (e) {
+            document.querySelector(".para").innerHTML = e.target.value
+        })
+    </script>
+</body>
+
+</html>

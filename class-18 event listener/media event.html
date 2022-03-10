@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <video controls loop src="video/Aankhein Meri.mp4" type="video/mp4" height="400" width="600"></video>
+
+    <script>
+        var video=document.querySelector("video");
+        video.addEventListener("canplay", function () {
+            console.log("canplay")
+        })
+
+        video.addEventListener("play", function () {
+            console.log("play")
+        })
+
+        video.addEventListener("playing", function () {
+            console.log("playing")
+        })
+
+        video.addEventListener("pause", function () {
+            console.log("pause")
+        })
+
+        video.addEventListener("ended", function () {
+            console.log("thank for watching")
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea name="name" id="tarea" cols="30" rows="10"></textarea>
+
+    <script>
+        var textarea=document.querySelector("#tarea");
+        textarea.addEventListener("keydown",function(){
+            console.log("Keydown")
+        })
+
+        textarea.addEventListener("keyup",function(e){
+            console.log("Keyup")
+        })
+
+        textarea.addEventListener("keypress",function(){
+            console.log("Keypress")
+        })
+    </script>
+</body>
+</html>
