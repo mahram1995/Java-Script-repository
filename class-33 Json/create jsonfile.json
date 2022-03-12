@@ -1,0 +1,38 @@
+{
+    "student":[
+        {
+            "name":"Md Mahram Ali",
+            "age":"27",
+            "mobile":1710279904,
+            "email":"mahram@gmail.com",
+            "skill":["JAVA","Spring Boot", "JPA","JavaScript"],
+            "Friend":[
+                {
+                    "name":"Nishad",
+                    "mobile":1303254158
+                },
+                {
+                    "name":"Rakib",
+                    "mobile":1502548541
+                }
+            ]
+        },
+        {
+            "name":"Md Shamim Ali",
+            "age":"27",
+            "mobile":1754845214,
+            "email":"shamim@gmail.com",
+            "skill":["JAVA","Spring Boot", "JPA","JavaScript"],
+            "Friend":[
+                {
+                    "name":"Tamanna",
+                    "mobile":1303254158
+                },
+                {
+                    "name":"Sanjida",
+                    "mobile":1502548541
+                }
+            ]
+        }
+    ]
+}
