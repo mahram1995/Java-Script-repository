@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Guessing Game</h1> 
+        <form action="">
+            <label for="Enter a number">Enter Guess Between 1-5 <input id="input" type="number" min="1" max="5"  required></label>
+            <input type="submit" id="btn" value="Checnk Result">
+        </form>
+
+        <p id="message">you have won</p>
+        <p id="remaining">Remaining Attempts</p>
+        <h3 id="show-result">Won:1, Lost:0</h3>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

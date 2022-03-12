@@ -9,6 +9,7 @@ const makeRequest = (method, url, data) => {
         console.log(JSON.parse(data));
 
 
+        
     }
     xhr.onerror = () => {
         console.log("something error")
@@ -53,7 +54,7 @@ const updatSingleData = () => {
 const deleteleData = () => {
     makeRequest("put", "https://jsonplaceholder.typicode.com/users/1")
 }
-deleteleData();
+//deleteleData();
 
 
 

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // localStorage store data as key value pair
+
+
+// set data to localStorage
+localStorage.setItem("userName", "Md mahram ali");
+localStorage.setItem("password", "6660052");
+
+// getItem;
+const userName = localStorage.getItem("userName");
+const password = localStorage.getItem("password");
+console.log(userName);
+console.log(password);
+
+
+//remove Data 
+localStorage.removeItem("userName");
+
+const userName1 = localStorage.getItem("userName");
+console.log("username" + userName1);
+
+// store array 
+const country = ["bangladesh", "Rashia", "pakistan"];
+localStorage.setItem("countryName", JSON.stringify(country));
+
+// get array from local storage
+const countryList = JSON.parse(localStorage.getItem("countryName"));
+console.log(countryList);
+    </script>
+</body>
+</html>
