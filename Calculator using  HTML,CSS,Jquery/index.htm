@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Calculator</h3>
+        <input class="display" id="display" type="text">
+
+        <div class="button-container">
+            <div class="button-row">
+                <input class="button" type="submit" value="c" onclick="cleare()">
+                <input class="button" type="submit" value="^" onclick="insertNurmber('^')">
+                <input class="button" type="submit" value="%" onclick="insertNurmber()">
+                <input class="button" type="submit" value="/" onclick="insertNurmber('/')" >
+            </div>
+            <div class="button-row">
+                <input class="button" type="submit" value="7" onclick="insertNurmber(7)">
+                <input class="button" type="submit" value="8" onclick="insertNurmber(8)">
+                <input class="button" type="submit" value="9" onclick="insertNurmber(9)">
+                <input class="button" type="submit" value="*" onclick="insertNurmber('*')">
+            </div>
+            <div class="button-row">
+                <input class="button" type="submit" value="4" onclick="insertNurmber(4)">
+                <input class="button" type="submit" value="5" onclick="insertNurmber(5)">
+                <input class="button" type="submit" value="6" onclick="insertNurmber(6)">
+                <input class="button" type="submit" value="-" onclick="insertNurmber('-')">
+            </div>
+            <div class="button-row">
+                <input class="button" type="submit" value="1" onclick="insertNurmber(1)">
+                <input class="button" type="submit" value="2" onclick="insertNurmber(2)">
+                <input class="button" type="submit" value="3" onclick="insertNurmber(3)">
+                <input class="button" type="submit" value="+" onclick="insertNurmber('+')">
+            </div>
+            <div class="button-row">
+                <input class="button" type="submit" value="0" onclick="insertNurmber(0)">
+                <input class="button" type="submit" value="00" onclick="insertNurmber('00')">
+                <input class="button" type="submit" value=".">
+                <input class="button" type="submit" value="=" onclick="calculate()">
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
